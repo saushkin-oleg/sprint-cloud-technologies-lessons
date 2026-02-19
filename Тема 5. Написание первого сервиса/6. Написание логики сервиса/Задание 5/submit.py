@@ -37,10 +37,11 @@ def submit(test_name):
         sys.exit()
 
     TESTS_HOST_2 = u_settings.TESTS_HOST_2
+    TESTS_HOST = u_settings.TESTS_HOST
     student = u_settings.student
     # pg_settings = u_settings.pg_settings
 
-    print(TESTS_HOST_2)
+    print(f'{TESTS_HOST_2}/{test_name}')
 
     try:
         r = requests.post(
@@ -55,6 +56,8 @@ def submit(test_name):
     except Exception as e:
         print(e)
         return
+    
+    print(f">>>>>>>>>>>>>>>>>>\n{r.json()}")
 
     if r.status_code == 200:
         if 'result_key' in r.json()['response']['payload']:
