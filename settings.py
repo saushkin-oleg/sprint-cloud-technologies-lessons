@@ -1,13 +1,13 @@
 TESTS_HOST = '51.250.8.141'
 TESTS_HOST_2 = 'https://postgres-check-service.sprint9.tgcloudenv.ru'
 
-student = '*',  # ваш_логин
+student = 'ocmarus',  # ваш_логин
 pg_settings = {
-    'host': '*',  # хост_вашего_postgresql
+    'host': 'rc1b-ksesr4m4pp1ferd5.mdb.yandexcloud.net',  # хост_вашего_postgresql
     'port': 6432,  # порт_вашего_postgresql
-    'dbname': '*',  # название_бд
-    'username': '*',  # имя_пользователя_для_подключения
-    'password': '*'  # пароль_для_подключения
+    'dbname': 'sprint9dwh',  # название_бд
+    'username': 'db_user',  # имя_пользователя_для_подключения
+    'password': 'ocm_practicum'  # пароль_для_подключения
 }
 
 # укажите полный путь до папки с sprint-9-sample-service

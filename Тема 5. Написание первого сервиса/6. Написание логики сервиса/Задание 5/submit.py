@@ -25,6 +25,9 @@ def submit(test_name):
 
     path_s9_srv = u_settings.path_s9_srv
 
+    path_s9_srv = 'C:/Users/o.saushkin/Documents/Programming/sprint-9-sample-service/stg-service'
+
+
     rlz_file = 'src/stg_loader/stg_message_processor_job.py'
 
     user_file = f'{path_s9_srv}/{rlz_file}'
